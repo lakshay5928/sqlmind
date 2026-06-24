@@ -21,6 +21,7 @@
 ## 📋 Table of Contents
 
 - [What is SQLMind AI?](#what-is-sqlmind-ai)
+- [Screenshots](#screenshots)
 - [Features](#features)
 - [Architecture](#architecture)
 - [Quick Start](#quick-start)
@@ -50,6 +51,37 @@ SQLMind AI is a full-stack AI-powered SQL developer tool that combines:
 Think of it as GitHub Copilot + Supabase Studio + Cursor AI, but for SQL — completely free.
 
 ---
+
+## Screenshots
+
+### 🧠 Natural Language → SQL (Groq · Llama 3.3)
+Schema-aware query generation with real-time health scoring across Performance, Security, Readability, and Optimization axes,Side-by-side performance comparison: Execution Cost, Memory usage, and Estimated Rows — with percentage improvement deltas.
+
+<img width="1900" height="909" alt="Screenshot 2026-06-23 205740" src="https://github.com/user-attachments/assets/fe8445ba-afaa-4eba-aca6-87d821f169f0" />
+
+---
+
+### 🗺️ Interactive ER Diagram
+Auto-generated, draggable entity-relationship diagram from your uploaded schema — with color-coded tables and PK indicators.
+
+<img width="1078" height="710" alt="Screenshot 2026-06-23 210341" src="https://github.com/user-attachments/assets/1bfb6235-27b2-424f-a51e-16ac55c5128a" />
+
+---
+
+### ⚙️ Execution Plan Visualizer
+AST-based execution plan showing Table Scans, Hash Joins, Sort, and Limit steps with cost and row estimates per node.
+
+<img width="1901" height="908" alt="Screenshot 2026-06-23 210316" src="https://github.com/user-attachments/assets/a7618ca1-d289-46c6-8262-6d2b6a4e20ab" />
+
+---
+
+### 📈 Analytics Dashboard
+Query history analytics: health score trends, dialect distribution, complexity breakdown, common issues, and AI provider usage.
+
+<img width="1894" height="901" alt="Screenshot 2026-06-23 210236" src="https://github.com/user-attachments/assets/f95b1140-6d5a-4d48-80ac-fb70cdf5e531" />
+
+---
+
 
 ## Features
 
