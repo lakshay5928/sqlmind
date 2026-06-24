@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+build/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Database (keep .db files local)
+*.db
+*.db-journal
+
+# Prisma
+prisma/migrations/
+
+# Misc
+.DS_Store
+*.log
+.vercel

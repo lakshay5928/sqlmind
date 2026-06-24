@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+model Query {
+  id          String   @id @default(cuid())
+  input       String
+  mode        String   @default("nl")
+  dialect     String   @default("postgresql")
+  role        String   @default("developer")
+  rawSql      String?
+  optimized   String?
+  explanation String?
+  hindiExplanation String?
+  healthScore Int      @default(0)
+  complexity  String?
+  warnings    String?
+  indexes     String?
+  beforeCost  Int      @default(0)
+  afterCost   Int      @default(0)
+  beforeMemory Int     @default(0)
+  afterMemory  Int     @default(0)
+  beforeRows  Int      @default(0)
+  afterRows   Int      @default(0)
+  improvements String?
+  notes       String?
+  versions    String?
+  schemaContext String?
+  aiProvider  String   @default("rules")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+model Schema {
+  id        String   @id @default(cuid())
+  name      String
+  content   String
+  tables    String
+  source    String   @default("paste")
+  createdAt DateTime @default(now())
+}
+model Template {
+  id          String @id @default(cuid())
+  name        String
+  category    String
+  description String
+  sql         String
+  tags        String
+}
